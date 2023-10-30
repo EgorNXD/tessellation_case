@@ -1,10 +1,20 @@
-def get_color_choice():
-    print('Допустимые цвета заливки: \n красный\n оранжевый\n желтый\n зеленый\n голубой\n синий\n фиолетовый\nПожалуйста введите цвет: ')
-    colors = ['красный', 'оранжевый', 'желтый', 'зеленый', 'голубой', 'синий', 'фиолетовый']
-    name = input()
-    while name.lower() not in colors:
-        print('Этого цвета нет в палитре. Выберите новый цвет.')
-        name = input('Напишите корректный цвет:')
+import turtle
+t = turtle.Turtle()
+def draw_hexagon(x, y, side_len, color):
+    t.down()
+    t.fillcolor(color)
+    t.begin_fill()
+    t.left(30)
+    t.forward(side_len)
+    for i in range(5):
+        t.left(60)
+        t.forward(side_len)
+    t.end_fill()
+    t.seth(0)
+
+
+draw_hexagon(0,0,50, 'orange')
+turtle.done()
 
 
 
@@ -15,6 +25,8 @@ def get_color_choice():
 
 
 
-get_color_choice()
+
+
+
 
 
