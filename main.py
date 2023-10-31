@@ -1,3 +1,7 @@
+"""
+Egor Nechaev == 80
+Polevik Alexey == 30
+"""
 import turtle
 
 t = turtle.Turtle()
