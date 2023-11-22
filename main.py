@@ -1,5 +1,5 @@
 """
-Egor Nechaev == 80
+Egor Nechaev == 90
 Polevik Alexey == 30
 """
 import turtle
